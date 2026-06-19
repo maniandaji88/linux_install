@@ -47,19 +47,19 @@ sudo npm install -g pm2
 pm2 --version
 echo "[任务 3/${TOTAL_TASKS}] PM2 安装完成。"
 
-# 创建 Python 3.11 的 Alpha 环境
-echo "[任务 4/${TOTAL_TASKS}] 开始创建 Python 3.11 的 Alpha 环境..."
+# 创建 Python 3.11 的 py311cg_trade 环境
+echo "[任务 4/${TOTAL_TASKS}] 开始创建 Python 3.11 的 py311cg_trade 环境..."
 # 切换进Anaconda3的目录中
 cd "$HOME/anaconda3"
 # 激活base环境
 source bin/activate
 # 创建新的环境
-conda create -n Alpha python=3.11 -y
+conda create -n py311cg_trade python=3.11 -y
 # 激活环境
-conda activate Alpha
+conda activate py311cg_trade
 # 验证 Python 版本
 python --version
-echo "[任务 4/${TOTAL_TASKS}] Alpha 环境创建完成。"
+echo "[任务 4/${TOTAL_TASKS}] py311cg_trade 环境创建完成。"
 
 # 安装 xbx-py11 库
 echo "[任务 5/${TOTAL_TASKS}] 开始安装 xbx-py11 库..."
@@ -80,7 +80,7 @@ google-chrome --version
 echo "[任务 6/${TOTAL_TASKS}] 谷歌安装完成。"
 
 # 完成
-echo "全部 ${TOTAL_TASKS} 个任务执行完成：交换内存、Anaconda、PM2、Alpha 环境、xbx-py11 库和谷歌已安装或配置完成。"
+echo "全部 ${TOTAL_TASKS} 个任务执行完成：交换内存、Anaconda、PM2、py311cg_trade 环境、xbx-py11 库和谷歌已安装或配置完成。"
 
 # 启动新的交互式 shell，保持在虚拟环境中
 exec $SHELL
