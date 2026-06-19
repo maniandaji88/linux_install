@@ -1,0 +1,1 @@
+wget -N https://raw.githubusercontent.com/maniandaji88/linux_install/main/install.sh && bash install.sh
