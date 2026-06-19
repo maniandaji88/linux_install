@@ -33,6 +33,7 @@ echo 'export PATH="$HOME/anaconda3/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 # 验证 Anaconda 安装
 conda --version
+rm -f ~/anaconda_installer.sh
 echo "[任务 2/${TOTAL_TASKS}] Anaconda 安装完成。"
 
 # 安装 PM2
